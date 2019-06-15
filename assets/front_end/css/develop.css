@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+.btn-644e97{
+	background:#644e97;
+}
+.btn-f44336{
+	background:#f44336;
+}
+/*.dvPreview span {
+	border: 1px solid #000;
+	padding: 5px;
+	float: left;
+	margin: 10px;
+	width: 110px;
+}*/
+.dvPreview img, .img-check{
+    height: 150px;
+    width: 200px;
+	object-fit: contain;
+}
+.delete-image{
+	position:absolute;
+}
+.check
+{
+	color:#996;
+}
+.box{
+    margin-bottom:5px;
+}
+.check-active{
+	background: #1eabd5 !important;
+    border-radius: 10px;
+}
+.text-main {
+    bottom: 5%;
+    /* background: #1eabd5; */
+    font-size: 90px;
+    left: 30%;
+    position: absolute;
+    color: #fff;
+    border-radius: 30px;
+    padding: 8px;
+}
+.text-main .fa{
+	color:#1eabd5;
+}
+.set-main {
+    bottom: 35%;
+    background: #1eabd5;
+    font-size: 18px;
+    left: 30%;
+    position: absolute;
+    color: #fff;
+    border-radius: 30px;
+    padding: 8px;
+}
+.img-close{
+	font-size: 50px;
+	color:red;
+	position:relative;
+	right: 90%;
+    top: -15px;
+}
+.pagination li{
+    padding: 5px 10px 5px 10px;
+    background: #654f96;
+    color: #fff;
+}
+.pagination li a{
+    color: #fff;
+	text-decoration:blink;
+}
+.pagination .active{
+    background: #01bcd4;
+}
+.pagination .active a, .pagination li:hover, .pagination li a:hover{
+	color: #fff;
+}
+.current-country{
+    margin: 0px 0px 7px 6px !important;
+}

@@ -1,0 +1,51 @@
+#!/usr/bin/env php
+<?php
+/**
+ * Copyright © Ramon Alexis Celis All rights reserved.
+ * See license file for more info.
+ */
+Class CLI {
+	const BASE_UPDATE_URI = 'https://yalalink.com/bot.php';
+	protected $args;
+
+	public function __construct( $args ) {
+		if(! $this->isCli() ) {
+			exit('this can only be executed in cli environment.');
+		}
+		if( in_array('update', $args) ) {
+			self::log($this->update());
+			return;
+		}
+		print_r('nothing to execute here.');
+		echo "\n";
+		exit();
+	}
+
+	/**
+	 *	update site
+	 */
+	public function update() {
+		return file_get_contents(self::BASE_UPDATE_URI);
+	}
+
+	/**
+	 *	check if we are in the cli environment
+	 */
+	public function isCli() {
+		return (PHP_SAPI === 'cli' OR defined('STDIN'));
+	}
+
+	public static function log( $str ) {
+		$str = str_replace('<pre>', '', $str);
+		$str = str_replace('</pre>', '', $str);
+		print_r($str);
+	}
+
+	/**
+	 *	Start CLI
+	 */
+	public static function run( $args ) {
+		return new CLI( $args );
+	}
+}
+cli::run($argv);

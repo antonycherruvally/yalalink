@@ -1,0 +1,30 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  .form-inline .form-control-label {
+    display: block;
+  }
+
+  .form-inline .form-group {
+    margin-bottom: 20px;
+    vertical-align: baseline;
+  }
+}
+.pagination li{
+    padding: 5px 10px 5px 10px;
+    background: #654f96;
+    color: #fff;
+}
+.pagination li a{
+    color: #fff;
+	text-decoration:blink;
+}
+.pagination .active{
+    background: #01bcd4;
+}
+.pagination .active a, .pagination li:hover, .pagination li a:hover{
+	color: #fff;
+}
+.dvPreview img, .img-check {
+    height: 150px;
+    width: 200px;
+    object-fit: contain;
+}

@@ -1,0 +1,7 @@
+uploads
+design/
+application/config/database.php
+application/config/config.php
+.htaccess
+error_log
+assets/error_logs/

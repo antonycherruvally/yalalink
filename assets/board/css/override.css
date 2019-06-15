@@ -1,0 +1,7 @@
+.m-form.m-form--group-seperator-dashed .m-form__group {
+    border-bottom: 0px;
+}
+
+.form-control-feedback {
+	color: red !important;
+}
